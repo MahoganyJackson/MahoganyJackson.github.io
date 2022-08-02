@@ -1,0 +1,46 @@
+:root {
+
+	--bg: #222 ;
+	--fg: #ccc ;
+	--behind: #121224 ;
+	--behind: linear-gradient(#121224,darkslateblue) fixed ;
+	--h1: lightblue ;
+	--red: tomato ;
+	--yellow: goldenrod ;
+	--blue: deepskyblue ;
+	--link: turquoise ;
+	--linksec: paleturquoise ;
+	--border: #333 ;
+	--box: #444 ;
+
+}
+body {
+	background: var(--behind) ;
+	color: var(--fg) ;
+	margin-bottom: 200px ;
+}
+
+a:hover {
+	color: var(--linksec) ;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: "Garamond" ;
+}
+
+main {
+	max-width: 800px ;
+	margin: auto ;
+}
+
+header h1 {
+	border-style: solid ;
+	border-width: 0px 0px 2px 0px ;
+	border-color: #000033 ;
+	text-align: left ;
+	font-size: xx-large ;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	text-align: left ;
+}
