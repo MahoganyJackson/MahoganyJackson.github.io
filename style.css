@@ -1,36 +1,30 @@
 body {
-	background-color: #FFFFFF;
-	color: #000000;
+	background-color: #1d2521; /* Base03: Dark gray-green */
+	color: #d0d0d0; /* Base05: Light gray */
 	font-family: "Courier New", monospace;
-	margin: 20px;
+	margin: 0 auto;
 	max-width: 800px;
-	line-height: 1.4;
+	line-height: 1.6;
+	padding: 20px;
+	display: block;
   }
   
   h1, h2 {
-	color: #000080; /* Navy blue, 90s staple */
-	font-family: "Courier New", monospace;
+	color: #7aa6da; /* Base0D: Cyan */
   }
   
   a {
-	color: #0000FF; /* Classic blue link */
+	color: #89b482; /* Base0B: Green */
 	text-decoration: underline;
   }
   
   a:visited {
-	color: #800080; /* Purple for visited links */
+	color: #c397d8; /* Base0E: Purple */
+  }
+  
+  a:hover {
+	color: #e78c45; /* Base09: Orange */
   }
   
   ul {
-	list-style-type: square; /* Retro bullet style */
-	padding-left: 40px;
-  }
-  
-  hr {
-	border: 1px solid #000000; /* Thick, bold 90s line */
-  }
-  
-  cite {
-	font-style: italic;
-	color: #555555;
-  }
+	list-style-type: square
