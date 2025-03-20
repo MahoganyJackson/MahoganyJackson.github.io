@@ -1,36 +1,82 @@
+/* Existing rules */
 body {
-	background-color: #1d2521; /* Base03: Dark gray-green */
-	color: #d0d0d0; /* Base05: Light gray */
-	font-family: "Courier New", monospace;
-	margin: 0 auto;
-	max-width: 800px;
-	line-height: 1.6;
-	padding: 20px;
-	display: block;
-  }
-  
-  h1, h2 {
-	color: #7aa6da; /* Base0D: Cyan */
-  }
-  
-  a {
-	color: #89b482; /* Base0B: Green */
-	text-decoration: underline;
-  }
-  
-  a:visited {
-	color: #c397d8; /* Base0E: Purple */
-  }
-  
-  a:hover {
-	color: #e78c45; /* Base09: Orange */
-  }
-  
-  ul {
-	list-style-type: square;
-	padding-left: 40px;
-  }
-  
-  hr {
-	border: 1px solid #585858; /* Base01: Medium gray */
-  }
+    background-color: #1d2521; /* Base03: Dark gray-green */
+    color: #d0d0d0; /* Base05: Light gray */
+    font-family: "Courier New", monospace;
+    margin: 0 auto;
+    max-width: 800px;
+    line-height: 1.6;
+    padding: 20px;
+    display: block;
+}
+
+h1, h2 {
+    color: #7aa6da; /* Base0D: Cyan */
+}
+
+a {
+    color: #89b482; /* Base0B: Green */
+    text-decoration: underline;
+}
+
+a:visited {
+    color: #c397d8; /* Base0E: Purple */
+}
+
+a:hover {
+    color: #e78c45; /* Base09: Orange */
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 40px;
+}
+
+hr {
+    border: 1px solid #585858; /* Base01: Medium gray */
+}
+
+/* New rules for my-immortal.html */
+p.western, p.cjk, p.ctl {
+    font-family: "Courier New", monospace; /* Override Georgia */
+    font-size: 11pt;
+    text-align: justify;
+    color: #d0d0d0; /* Base05 */
+    margin-bottom: 0; /* Match original */
+}
+
+h1.western, h1.cjk, h1.ctl {
+    font-family: "Courier New", monospace; /* Override Georgia */
+    font-size: 14pt;
+    color: #7aa6da; /* Base0D: Cyan */
+    text-align: left; /* Override justify for readability */
+    margin-bottom: 0;
+}
+
+blockquote.western, blockquote.cjk, blockquote.ctl {
+    font-family: "Courier New", monospace; /* Override Georgia */
+    font-size: 11pt;
+    font-style: italic;
+    color: #d0d0d0; /* Base05 */
+    margin-left: 1cm;
+    margin-right: 1cm;
+    text-align: justify; /* Default */
+}
+
+blockquote.western[style="text-align: center"], 
+blockquote.cjk[style="text-align: center"], 
+blockquote.ctl[style="text-align: center"] {
+    text-align: center; /* Preserve centered separators */
+    font-style: normal; /* X666X lines aren’t italic */
+}
+
+/* Ensure links match your theme */
+a:link {
+    color: #89b482; /* Base0B: Green */
+    text-decoration: underline;
+}
+
+/* Remove print-specific rules */
+@page {
+    /* Ignore size and margins for web */
+}
